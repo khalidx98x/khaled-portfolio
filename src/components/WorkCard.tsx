@@ -41,7 +41,7 @@ export function WorkCard({ project, index }: WorkCardProps) {
         className="absolute inset-0 hidden bg-gradient-to-r from-black/80 via-black/30 to-transparent lg:block"
       />
 
-      <div className="relative z-10 flex w-full flex-col justify-between p-8 sm:p-10 lg:min-h-[650px] lg:w-[62%] lg:max-w-[39rem] lg:p-16">
+      <div className="relative z-10 flex w-full flex-col justify-between bg-[#010101] p-8 pb-0 sm:p-10 sm:pb-0 lg:min-h-[650px] lg:w-[62%] lg:max-w-[39rem] lg:bg-transparent lg:p-16">
         <div>
           <h3 className="max-w-3xl text-2xl font-bold leading-[1.1] tracking-tighter text-white sm:text-3xl lg:text-5xl">
             {project.title}
@@ -88,16 +88,30 @@ export function WorkCard({ project, index }: WorkCardProps) {
         </div>
       </div>
 
-      <div
-        aria-label={project.media.alt}
-        className="relative h-[300px] w-full bg-cover bg-right-bottom bg-no-repeat lg:hidden"
-        role="img"
-        style={{
-          backgroundImage: `url("${project.media.src}")`,
-          backgroundPosition: "right bottom",
-          backgroundSize: "cover"
-        }}
-      />
+      <div className="relative flex h-[320px] w-full items-end justify-center overflow-hidden bg-[#010101] sm:h-[350px] lg:hidden">
+        <motion.div
+          aria-label={project.media.alt}
+          className="absolute inset-0 bg-cover bg-bottom bg-no-repeat"
+          initial={{
+            opacity: prefersReducedMotion ? 1 : 0.85,
+            y: prefersReducedMotion ? 0 : 28
+          }}
+          role="img"
+          style={{
+            backgroundImage: `url("${project.media.src}")`,
+            backgroundPosition: "center bottom",
+            backgroundSize: "cover"
+          }}
+          transition={{
+            delay: prefersReducedMotion ? 0 : index * 0.08 + 0.12,
+            duration: prefersReducedMotion ? 0 : 0.9,
+            ease,
+            type: "tween"
+          }}
+          viewport={{ amount: 0.1, margin: "-100px", once: true }}
+          whileInView={{ opacity: 1, y: 0 }}
+        />
+      </div>
     </motion.article>
   );
 }
