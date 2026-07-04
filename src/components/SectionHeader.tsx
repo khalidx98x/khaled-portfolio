@@ -13,9 +13,9 @@ export function SectionHeader({ title }: SectionHeaderProps) {
 
   return (
     <motion.div
-      className="flex w-full items-center py-24 font-sans"
+      className="flex w-full items-center py-12 font-sans md:py-24"
       initial="hidden"
-      viewport={{ amount: 0.7, once: true }}
+      viewport={{ amount: 0.1, margin: "-100px", once: true }}
       whileInView="visible"
     >
       <motion.h2

@@ -80,7 +80,7 @@ export function Contact({
               duration: prefersReducedMotion ? 0 : 1.1,
               ease
             }}
-            viewport={{ amount: 0.35, once: true }}
+            viewport={{ amount: 0.1, margin: "-100px", once: true }}
             whileInView={{ opacity: 1, y: 0 }}
           >
             <div className="relative aspect-[4/5] max-h-[36rem] overflow-hidden rounded-[32px] bg-[#e9e8e6]">
@@ -106,7 +106,7 @@ export function Contact({
             className="text-center md:col-span-7 md:text-left"
             initial="hidden"
             variants={prefersReducedMotion ? undefined : introContainer}
-            viewport={{ amount: 0.45, once: true }}
+            viewport={{ amount: 0.1, margin: "-100px", once: true }}
             whileInView="visible"
           >
             <motion.h2
@@ -151,7 +151,7 @@ export function Contact({
             </motion.div>
           </motion.div>
         </div>
-        <div className="mt-8 flex w-full flex-col gap-8 border-t border-black/5 pt-10 md:mt-40 md:flex-row md:items-end md:justify-between">
+        <div className="mt-8 flex w-full flex-col items-center gap-6 border-t border-black/5 pt-10 text-center md:mt-40 md:flex-row md:items-end md:justify-between md:text-left">
           <div>
             <p className="text-sm font-bold text-[#010101]">Khaled Abdalqader</p>
             <p className="mt-3 inline-flex items-center gap-2 text-xs text-[#010101] opacity-40">
@@ -163,7 +163,7 @@ export function Contact({
             </p>
           </div>
           <nav aria-label="Secondary footer navigation">
-            <ul className="flex flex-wrap gap-8">
+            <ul className="flex flex-wrap justify-center gap-8">
               {secondaryLinks.map((link) => (
                 <li key={link.label}>
                   <a

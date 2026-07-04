@@ -209,7 +209,7 @@ export function Header({
           paddingTop: isScrolled ? 0 : 32,
           width: isScrolled ? "fit-content" : "92vw"
         }}
-        className="box-border grid h-auto min-h-14 grid-cols-[1fr_auto_1fr] items-center border font-libre text-[#010101] will-change-[width,padding,border-radius,background-color,backdrop-filter]"
+        className="box-border flex h-auto min-h-14 items-center justify-between border font-libre text-[#010101] will-change-[width,padding,border-radius,background-color,backdrop-filter] lg:grid lg:grid-cols-[1fr_auto_1fr]"
         initial={false}
         transition={transition}
       >
@@ -239,7 +239,7 @@ export function Header({
             </li>
           ))}
         </ul>
-        <div className="flex items-center justify-end gap-2">
+        <div className="flex shrink-0 items-center justify-end gap-2">
           <a
             aria-label="Download Khaled Abdalqader's resume"
             className="hidden rounded-full border border-[#010101] px-4 py-2 text-sm font-semibold transition-all duration-[600ms] ease-[cubic-bezier(0.2,1,0.3,1)] hover:bg-[#010101] hover:text-white focus-visible:bg-[#010101] focus-visible:text-white sm:inline-flex"
