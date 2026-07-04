@@ -46,3 +46,4 @@ This project is compatible with Vercel's standard Next.js deployment.
 
 The resume file is served from `public/resume.pdf`. Static images and logos are served from `public/media`.
 # khaled-portfolio
+# khaled-portfolio
