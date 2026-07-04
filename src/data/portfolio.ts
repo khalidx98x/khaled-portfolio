@@ -108,8 +108,8 @@ export const portfolio = {
   },
   projects: [
     {
-      id: "management-dashboard",
-      title: "Redesigning Blink’s Dashboard for Consistency and Scale",
+      id: "design-system",
+      title: "Design System for Event Management",
       brief:
         "Redesigned legacy dashboard modules into a unified, token-based system with reusable components, clearer layouts, and a consistent visual language across the platform. Integrated Claude into the workflow to audit screens, explore component variants, and speed up the shift from old layouts to the new system.",
       role: "Product Designer Lead",
@@ -122,33 +122,49 @@ export const portfolio = {
         { label: "Unified Design Language" }
       ],
       media: {
-        src: "/media/work/cards/management-dashboard.png",
-        alt: "Redesigning Blink’s Dashboard for Consistency and Scale visual composition",
+        src: "/media/work/cards/design-system.png",
+        alt: "Design System for Event Management visual composition",
         priority: true
       }
     },
     {
-      id: "organizer-app",
-      title: "Building Blink’s Award-Winning Organizer App",
+      id: "event-ops-app",
+      title: "Event Ops App",
       brief:
-        "Led the end-to-end design of Blink’s new Organizer App, turning early references into a scalable product for complex event operations, attendee and VIP management, sessions, access, and on-site workflows.",
+        "Led the end-to-end design of Blink’s Event Ops App, a scalable operational product built for organizers managing complex on-site workflows. Turned early references into a system-led experience for attendees, VIPs, sessions, access, and event operations—used across SXSW, Super Bowl, and Sportico.",
       role: "Product Designer",
-      period: "Jan 2024 — Mar 2024",
+      period: "Jan 2025 — Mar 2025",
       tags: [
         { label: "Award-Winning Platform", highlight: true },
         { label: "Unified Product Experience" },
         { label: "Scalable Event Operations" }
       ],
       media: {
-        src: "/media/work/cards/organizer-app.png",
-        alt: "Building Blink’s Award-Winning Organizer App visual composition"
+        src: "/media/work/cards/event-ops-app.png",
+        alt: "Event Ops App visual composition"
       }
     },
     {
-      id: "dynamic-tables",
-      title: "Redesigning Dynamic Tables for Complex Event Data",
+      id: "ticketing-commerce",
+      title: "Event Ticketing & Badge Commerce",
       brief:
-        "Led the redesign of Blink’s Dynamic Tables system, transforming dense event data into a flexible workspace with configurable columns, inline editing, draft records, validation states, and reusable table logic. Integrated Claude early in the process to turn brainstorming into presentation-ready concepts.",
+        "Designed a white-label ticketing and badge-commerce experience within the Blink platform, used by SXSW across two event editions. Led the design of management workflows for orders, payment methods, promotions, coupons, badge management, fulfillment, and attendee access features.",
+      role: "Product Designer",
+      period: "Jun 2024 — Dec 2024",
+      tags: [
+        { label: "£3M Ticket Sales" },
+        { label: "30K+ Badges Processed" }
+      ],
+      media: {
+        src: "/media/work/cards/ticketing-commerce.png",
+        alt: "Event Ticketing & Badge Commerce visual composition"
+      }
+    },
+    {
+      id: "data-tables",
+      title: "Building Configurable Data Tables",
+      brief:
+        "Designed Dynamic Tables for the Management Dashboard, turning static tables into flexible workspaces for complex event data. Integrated AI-powered workflows with Claude to explore solutions, prototype interactions, and speed up alignment.",
       role: "Product Designer",
       period: "Dec 2026 — Apr 2026",
       tags: [
@@ -159,26 +175,41 @@ export const portfolio = {
         { label: "Clean Dev Handoffs" }
       ],
       media: {
-        src: "/media/work/cards/dynamic-tables.png",
-        alt: "Redesigning Dynamic Tables for Complex Event Data visual composition"
+        src: "/media/work/cards/data-tables.png",
+        alt: "Building Configurable Data Tables visual composition"
       }
     },
     {
-      id: "attendee-vip",
-      title: "Unifying Attendee & VIP Experiences in One App",
+      id: "solar-solutions",
+      title: "A Digital Product Hub for Solar Solutions",
       brief:
-        "Leading the new Attendee App and integrating VIP journeys into one personalized product. Used custom Claude skills to simulate VIP perspectives, support design sprints, audit flows, and explore new page variants for premium services and persona-specific needs.",
-      role: "Product Design Lead",
-      period: "Aug 2025 — October 2025",
+        "Designed Ramo Power’s product website to make a broad solar portfolio easier to explore across solutions, products, projects, and catalogue content. Created a clearer structure for solar furniture, integrated poles, lighting, and product detail pages—supported by consistent image specifications and SEO-ready content patterns.",
+      role: "Web / Product Designer",
+      period: "Nov 2025 — Dec 2025",
       tags: [
-        { label: "Unified App Experience" },
-        { label: "VIP-Ready Architecture" },
-        { label: "Claude Audits" },
-        { label: "Faster Solution Exploration with Claude" }
+        { label: "+40% Website Visitors" },
+        { label: "+10% Conversion Rate" },
+        { label: "Investor-Ready Product Showcase" }
       ],
       media: {
-        src: "/media/work/cards/attendee-vip.png",
-        alt: "Unifying Attendee & VIP Experiences in One App visual composition"
+        src: "/media/work/cards/solar-solutions.png",
+        alt: "A Digital Product Hub for Solar Solutions visual composition"
+      }
+    },
+    {
+      id: "z-learna",
+      title: "Z Learna",
+      brief:
+        "Designed a story-led learning journey for Z Learna, helping students move from discovering the right service to trying classes and progressing with mentors, goals, and learning updates. Built around the Apply, Try, Fly framework to make education choices feel clearer, more motivating, and easier to continue.",
+      role: "Product Designer",
+      period: "Nov 2024 — Dec 2024",
+      tags: [
+        { label: "All-in-One Learning Hub" },
+        { label: "Guided Student Journey" }
+      ],
+      media: {
+        src: "/media/work/cards/z-learna.png",
+        alt: "Z Learna visual composition"
       }
     }
   ] satisfies ProjectItem[],
@@ -354,9 +385,9 @@ export const portfolio = {
     portraitPath: "/media/portrait/khaled-portrait.png",
     introTitle: "Sup!!",
     intro: [
-      "Name’s Khaled. Senior Product Designer focused on web apps, mobile experiences, and complex SaaS dashboards. I design products that make dense workflows feel clearer, more scalable, and easier to build.",
-      "My work combines product thinking, design systems, front-end understanding, and AI-integrated workflows — from redesigning event-management platforms to shaping organizer tools, attendee apps, and dashboard systems used across large-scale events.",
-      "I care about clean structure, edge-case thinking, practical implementation, and design that works beyond the perfect happy path."
+      "Name’s Khaled. Senior Product Designer focused on web apps, mobile experiences, and complex SaaS dashboards. I use Claude and Claude Design as primary tools in my workflow, alongside other AI tools, to explore ideas faster, audit interfaces, test variants, and strengthen scalable product decisions.",
+      "With a background in web development, branding, and UI design, I combine technical understanding with product thinking, design systems, and practical implementation.",
+      "I’ve led a team of three designers and designed scalable platforms for clients including SXSW, Super Bowl, and Sportico — across dashboards, organizer tools, attendee apps, commerce flows, and white-label systems."
     ],
     location: "Based in Istanbul · Open to opportunities",
     capabilities: [

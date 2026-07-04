@@ -38,7 +38,7 @@ export function WorkCard({ project, index }: WorkCardProps) {
       />
       <div
         aria-hidden="true"
-        className="absolute inset-0 hidden bg-gradient-to-r from-black/90 via-black/45 to-transparent lg:block"
+        className="absolute inset-0 hidden bg-gradient-to-r from-black/80 via-black/30 to-transparent lg:block"
       />
 
       <div className="relative z-10 flex w-full flex-col justify-between p-8 sm:p-10 lg:min-h-[650px] lg:w-[62%] lg:max-w-[39rem] lg:p-16">

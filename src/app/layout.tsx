@@ -28,7 +28,7 @@ export const metadata: Metadata = {
       "Senior Product Designer specializing in Web, Mobile & SaaS Dashboards.",
     images: [
       {
-        url: "/media/work/cards/management-dashboard.png",
+        url: "/media/work/cards/design-system.png",
         width: 4864,
         height: 2824,
         alt: "Khaled Abdalqader portfolio work preview"
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     title: "Khaled Abdalqader — Senior Product Designer",
     description:
       "Senior Product Designer specializing in Web, Mobile & SaaS Dashboards.",
-    images: ["/media/work/cards/management-dashboard.png"]
+    images: ["/media/work/cards/design-system.png"]
   }
 };
 
