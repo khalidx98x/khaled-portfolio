@@ -18,6 +18,7 @@ const ease = [0.22, 1, 0.36, 1] as const;
 
 const linkedInHref = "https://www.linkedin.com/in/khaled-a-4074a5184/";
 const resumeHref = "/resume.pdf";
+const resumeDownloadName = "Khalded Abdalqader Resume.pdf";
 const secondaryLinks = [
   {
     ariaLabel: "Visit Khaled's LinkedIn Profile",
@@ -28,7 +29,7 @@ const secondaryLinks = [
   },
   {
     ariaLabel: "Download Khaled Abdalqader's resume",
-    download: true,
+    download: resumeDownloadName,
     href: resumeHref,
     label: "Resume"
   }

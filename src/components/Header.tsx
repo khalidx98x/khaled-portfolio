@@ -21,6 +21,7 @@ const easing = [0.2, 1, 0.3, 1] as const;
 const scrollOffset = 132;
 const defaultLinkedInHref = "https://www.linkedin.com/in/khaled-a-4074a5184/";
 const defaultResumeHref = "/resume.pdf";
+const resumeDownloadName = "Khalded Abdalqader Resume.pdf";
 
 function createCubicBezierEasing(
   x1: number,
@@ -243,7 +244,7 @@ export function Header({
           <a
             aria-label="Download Khaled Abdalqader's resume"
             className="hidden rounded-full border border-[#010101] px-4 py-2 text-sm font-semibold transition-all duration-[600ms] ease-[cubic-bezier(0.2,1,0.3,1)] hover:bg-[#010101] hover:text-white focus-visible:bg-[#010101] focus-visible:text-white sm:inline-flex"
-            download
+            download={resumeDownloadName}
             href={resumeHref}
           >
             Resume
