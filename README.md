@@ -34,6 +34,18 @@ Run a production build:
 npm run build
 ```
 
+## Cloudflare Pages Deployment
+
+This portfolio is configured as a static Next.js export for Cloudflare Pages.
+
+Use these Cloudflare Pages settings:
+
+- Build command: `npm run build`
+- Build output directory: `out`
+- Node.js version: `20.9.0` or newer
+
+After changing these settings, trigger a fresh deployment.
+
 ## Vercel Deployment
 
 This project is compatible with Vercel's standard Next.js deployment.
