@@ -88,7 +88,7 @@ export function Contact({
               {portraitPath ? (
                 <Image
                   alt="Portrait of Khaled Abdalqader"
-                  className="object-cover object-[50%_62%]"
+                  className="origin-right scale-[1.15] object-cover object-[50%_62%]"
                   fill
                   priority={false}
                   sizes="(min-width: 768px) 38vw, 100vw"

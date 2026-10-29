@@ -382,7 +382,7 @@ export const portfolio = {
   footer: {
     heading: "Let's build the next generation of SaaS together.",
     email: "khalidalhajms@gmail.com",
-    portraitPath: "/media/portrait/khaled-portrait.png",
+    portraitPath: "/media/portrait/khaled-portrait-2026.jpg",
     introTitle: "Sup!!",
     intro: [
       "Name’s Khaled. Senior Product Designer focused on web apps, mobile experiences, and complex SaaS dashboards. I use Claude and Claude Design as primary tools in my workflow, alongside other AI tools, to explore ideas faster, audit interfaces, test variants, and strengthen scalable product decisions.",
